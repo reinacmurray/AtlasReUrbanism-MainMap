@@ -1,2 +1,2 @@
 # AtlasReUrbanism-MainMap
-Main map for the Atlas of ReUrbanism project. 
+This is the main map for the Atlas of ReUrbanism project. 
