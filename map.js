@@ -4,6 +4,8 @@ var map = L.map('map', {zoomControl: false}).setView([42.306, -109.093], 4);
 map.options.minZoom = 4;
 map.options.maxZoom = 9;
 
+
+
 // Set up home zoom
 var zoomHome = L.Control.zoomHome({position: 'topleft'});
 zoomHome.addTo(map);
@@ -38,7 +40,7 @@ var Stamen_TonerHybrid = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/
     	minZoom: 0,
     	maxZoom: 9,
     	ext: 'png'
-	}).addTo(map);
+  	}).addTo(map);
 
 //Unpublished cities
 map.createPane('inactive');
