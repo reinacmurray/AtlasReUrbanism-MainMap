@@ -18,7 +18,7 @@ var reurbIcon = L.icon({
 });
 
 var reurbIcon_grey = L.icon({
-	iconUrl: 'https://cloud.githubusercontent.com/assets/11901766/19737741/a9126e0c-9b82-11e6-8696-8282db872ee1.png',
+	iconUrl: 'https://cdn.rawgit.com/reinacmurray/61b24f2ccc9926db712eb029aa553172/raw/e1f45af304770e980e6a6c97dbd6ca06ba50c9d5/reurbpin-grey.svg',
 	iconSize: [25, 40],
 	iconAnchor: [13, 40],
 	popupAnchor: [0, -43] 
