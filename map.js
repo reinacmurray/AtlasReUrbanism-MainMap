@@ -2,7 +2,7 @@
 
 var map = L.map('map', {zoomControl: false}).setView([42.306, -109.093], 4);
 map.options.minZoom = 4;
-map.options.maxZoom = 12;
+map.options.maxZoom = 9;
 
 // Set up home zoom
 var zoomHome = L.Control.zoomHome({position: 'topleft'});
@@ -36,7 +36,7 @@ var Stamen_TonerHybrid = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/
     	attribution: 'Map tiles by <a href="https://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     	subdomains: 'abcd',
     	minZoom: 0,
-    	maxZoom: 12,
+    	maxZoom: 9,
     	ext: 'png'
 	}).addTo(map);
 
