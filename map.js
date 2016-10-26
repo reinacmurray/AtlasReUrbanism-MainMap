@@ -11,14 +11,14 @@ zoomHome.addTo(map);
 
 // Set up icons
 var reurbIcon = L.icon({
-	iconUrl: 'https://cloud.githubusercontent.com/assets/11901766/19712711/2ee28e6a-9b0e-11e6-940c-436276641ffd.png',
+	iconUrl: 'https://cloud.githubusercontent.com/assets/11901766/19737742/a91b1ade-9b82-11e6-81a4-fb95f1c87c90.png',
 	iconSize: [30, 48],
 	iconAnchor: [15, 48],
 	popupAnchor:  [0, -50] 
 });
 
 var reurbIcon_grey = L.icon({
-	iconUrl: 'https://cloud.githubusercontent.com/assets/11901766/19712713/2ee933d2-9b0e-11e6-9d37-f553034824fc.png',
+	iconUrl: 'https://cloud.githubusercontent.com/assets/11901766/19737741/a9126e0c-9b82-11e6-8696-8282db872ee1.png',
 	iconSize: [25, 40],
 	iconAnchor: [13, 40],
 	popupAnchor: [0, -43] 
@@ -38,13 +38,13 @@ var Stamen_TonerHybrid = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/
     	minZoom: 0,
     	maxZoom: 12,
     	ext: 'png'
-  	}).addTo(map);*/
+	}).addTo(map);*/
 
- var Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+var Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
 	maxZoom: 12
 }).addTo(map);
-// https: also suppported.
+
 var Stamen_TonerLabels = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}.{ext}', {
 	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 	subdomains: 'abcd',
