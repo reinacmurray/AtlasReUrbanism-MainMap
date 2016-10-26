@@ -11,7 +11,7 @@ zoomHome.addTo(map);
 
 // Set up icons
 var reurbIcon = L.icon({
-	iconUrl: 'https://cloud.githubusercontent.com/assets/11901766/19737742/a91b1ade-9b82-11e6-81a4-fb95f1c87c90.png',
+	iconUrl: 'https://cdn.rawgit.com/reinacmurray/c00640af2686ae79dfcad81a6179d720/raw/7b51060107325ae91c3f88b86290296b90ffc9ea/reurbpin-red.svg',
 	iconSize: [30, 48],
 	iconAnchor: [15, 48],
 	popupAnchor:  [0, -50] 
