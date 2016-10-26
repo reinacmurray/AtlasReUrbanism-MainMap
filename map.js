@@ -1,7 +1,8 @@
 //Initialize map
 
 var map = L.map('map', {zoomControl: false}).setView([42.306, -109.093], 4);
-
+map.options.minZoom = 4;
+map.options.maxZoom = 12;
 
 // Set up home zoom
 var zoomHome = L.Control.zoomHome({position: 'topleft'});
@@ -10,14 +11,14 @@ zoomHome.addTo(map);
 
 // Set up icons
 var reurbIcon = L.icon({
-	iconUrl: 'https://cloud.githubusercontent.com/assets/11901766/19712711/2ee28e6a-9b0e-11e6-940c-436276641ffd.png',
+	iconUrl: 'img/reurbpin-red.svg',
 	iconSize: [30, 48],
 	iconAnchor: [15, 48],
 	popupAnchor:  [0, -50] 
 });
 
 var reurbIcon_grey = L.icon({
-	iconUrl: 'https://cloud.githubusercontent.com/assets/11901766/19712713/2ee933d2-9b0e-11e6-9d37-f553034824fc.png',
+	iconUrl: 'img/reurbpin-grey.svg',
 	iconSize: [25, 40],
 	iconAnchor: [13, 40],
 	popupAnchor: [0, -43] 
@@ -35,7 +36,7 @@ var Stamen_TonerHybrid = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/
     	attribution: 'Map tiles by <a href="https://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     	subdomains: 'abcd',
     	minZoom: 0,
-    	maxZoom: 20,
+    	maxZoom: 12,
     	ext: 'png'
   	}).addTo(map);
 
