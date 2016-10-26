@@ -10,14 +10,14 @@ zoomHome.addTo(map);
 
 // Set up icons
 var reurbIcon = L.icon({
-	iconUrl: 'img/reurbpin_sm.png',
+	iconUrl: 'https://cloud.githubusercontent.com/assets/11901766/19712711/2ee28e6a-9b0e-11e6-940c-436276641ffd.png',
 	iconSize: [30, 48],
 	iconAnchor: [15, 48],
 	popupAnchor:  [0, -50] 
 });
 
 var reurbIcon_grey = L.icon({
-	iconUrl: 'img/reurbpingrey_sm.png',
+	iconUrl: 'https://cloud.githubusercontent.com/assets/11901766/19712713/2ee933d2-9b0e-11e6-9d37-f553034824fc.png',
 	iconSize: [25, 40],
 	iconAnchor: [13, 40],
 	popupAnchor: [0, -43] 
