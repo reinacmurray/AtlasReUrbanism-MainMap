@@ -25,14 +25,14 @@ var reurbIcon_grey = L.icon({
 
 
 //Load basemap
-var Hydda_Base = L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/base/{z}/{x}/{y}.png', 
+var Hydda_Base = L.tileLayer('https://{s}.tile.openstreetmap.se/hydda/base/{z}/{x}/{y}.png', 
 	{
-		attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		attribution: 'Tiles courtesy of <a href="https://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   	}).addTo(map);
 
-var Stamen_TonerHybrid = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-hybrid/{z}/{x}/{y}.{ext}', 
+var Stamen_TonerHybrid = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-hybrid/{z}/{x}/{y}.{ext}', 
 	{
-    	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    	attribution: 'Map tiles by <a href="https://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     	subdomains: 'abcd',
     	minZoom: 0,
     	maxZoom: 10,
@@ -73,7 +73,7 @@ var atlas_pub = L.esri.featureLayer({
 }).addTo(map);
 
 atlas_pub.bindPopup(function (evt) {
-    return L.Util.template('<h2>{city}, {state}</h2><h3><a href="{mapurl}" target="_blank">MAP</a></h3><h3><a href="{facturl}" target="_blank">FACT SHEET</a></h3>', evt.feature.properties);
+    return L.Util.template('<h2>{city}, {state}</h2><h3><a href="{mapurl}" target="_blank">MAP</a></h3><h3><a href="{facturl}" target="_blank">FACTSHEET</a></h3>', evt.feature.properties);
   });
 
 
