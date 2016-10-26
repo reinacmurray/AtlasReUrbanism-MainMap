@@ -44,7 +44,7 @@ var Stamen_TonerHybrid = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/t
 map.createPane('inactive');
 
 var atlas_unpub = L.esri.featureLayer({
-	url: "http://services3.arcgis.com/8mRVhBBtAu5eqZUu/arcgis/rest/services/AtlasCities/FeatureServer/0",
+	url: "https://services3.arcgis.com/8mRVhBBtAu5eqZUu/arcgis/rest/services/AtlasCities/FeatureServer/0",
 	where: "status = 'Inactive'",
 	pointToLayer: function(geojson, latlng) {
 		return L.marker(latlng, {
@@ -62,7 +62,7 @@ atlas_unpub.bindPopup(function (evt) {
 map.createPane('published');
 
 var atlas_pub = L.esri.featureLayer({
-	url: "http://services3.arcgis.com/8mRVhBBtAu5eqZUu/arcgis/rest/services/AtlasCities/FeatureServer/0",
+	url: "https://services3.arcgis.com/8mRVhBBtAu5eqZUu/arcgis/rest/services/AtlasCities/FeatureServer/0",
 	where: "status = 'Published'",
 	pointToLayer: function(geojson, latlng) {
 		return L.marker(latlng, {
