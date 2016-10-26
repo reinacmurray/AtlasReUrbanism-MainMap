@@ -1,7 +1,8 @@
 //Initialize map
 
 var map = L.map('map', {zoomControl: false}).setView([42.306, -109.093], 4);
-
+map.options.minZoom = 4;
+map.options.maxZoom = 12;
 
 // Set up home zoom
 var zoomHome = L.Control.zoomHome({position: 'topleft'});
@@ -25,7 +26,7 @@ var reurbIcon_grey = L.icon({
 
 
 //Load basemap
-var Hydda_Base = L.tileLayer('https://{s}.tile.openstreetmap.se/hydda/base/{z}/{x}/{y}.png', 
+/*var Hydda_Base = L.tileLayer('https://{s}.tile.openstreetmap.se/hydda/base/{z}/{x}/{y}.png', 
 	{
 		attribution: 'Tiles courtesy of <a href="https://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   	}).addTo(map);
@@ -35,9 +36,22 @@ var Stamen_TonerHybrid = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/
     	attribution: 'Map tiles by <a href="https://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     	subdomains: 'abcd',
     	minZoom: 0,
-    	maxZoom: 20,
+    	maxZoom: 12,
     	ext: 'png'
-  	}).addTo(map);
+  	}).addTo(map);*/
+
+ var Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+	maxZoom: 12
+}).addTo(map);
+// https: also suppported.
+var Stamen_TonerLabels = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}.{ext}', {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+	subdomains: 'abcd',
+	minZoom: 0,
+	maxZoom: 12,
+	ext: 'png'
+}).addTo(map);
 
 
 //Unpublished cities
