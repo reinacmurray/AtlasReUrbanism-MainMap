@@ -2,7 +2,9 @@
 
 var map = L.map('map', {zoomControl: false}).setView([42.306, -109.093], 4);
 map.options.minZoom = 4;
-map.options.maxZoom = 12;
+map.options.maxZoom = 9;
+
+
 
 // Set up home zoom
 var zoomHome = L.Control.zoomHome({position: 'topleft'});
@@ -11,14 +13,14 @@ zoomHome.addTo(map);
 
 // Set up icons
 var reurbIcon = L.icon({
-	iconUrl: 'img/reurbpin-red.svg',
+	iconUrl: 'https://cdn.rawgit.com/reinacmurray/c00640af2686ae79dfcad81a6179d720/raw/7b51060107325ae91c3f88b86290296b90ffc9ea/reurbpin-red.svg',
 	iconSize: [30, 48],
 	iconAnchor: [15, 48],
 	popupAnchor:  [0, -50] 
 });
 
 var reurbIcon_grey = L.icon({
-	iconUrl: 'img/reurbpin-grey.svg',
+	iconUrl: 'https://cdn.rawgit.com/reinacmurray/61b24f2ccc9926db712eb029aa553172/raw/e1f45af304770e980e6a6c97dbd6ca06ba50c9d5/reurbpin-grey.svg',
 	iconSize: [25, 40],
 	iconAnchor: [13, 40],
 	popupAnchor: [0, -43] 
@@ -36,10 +38,9 @@ var Stamen_TonerHybrid = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/
     	attribution: 'Map tiles by <a href="https://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     	subdomains: 'abcd',
     	minZoom: 0,
-    	maxZoom: 12,
+    	maxZoom: 9,
     	ext: 'png'
   	}).addTo(map);
-
 
 //Unpublished cities
 map.createPane('inactive');
